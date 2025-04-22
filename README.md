@@ -1,4 +1,5 @@
 # p-shell
+![psh](psh.png)
 
 Welcome to the new visually aesthetic p-shell
 
