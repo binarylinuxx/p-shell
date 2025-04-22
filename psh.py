@@ -42,8 +42,10 @@ def get_git_branch():
         branch = subprocess.check_output(['git', 'rev-parse', '--abbrev-ref', 'HEAD']) \
                          .strip().decode('utf-8')
         return branch
-    except subprocess.CalledProcessError:
-        return None
+    except subprocess.CalledProcessError as e:
+        return f"Error: {e}"
+    except Exception as e:
+        preturn f"Unknown error: {e}"
 
 def get_time():
     return datetime.now().strftime("%I:%M:%p")
