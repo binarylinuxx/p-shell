@@ -22,7 +22,26 @@ session = PromptSession(completer=path_completer)
 init(autoreset=True)
 
 # Sample commands for autocompletion
-commands = ["ls", "cd", "echo", "cat", "mkdir", "exit"]
+commands = [
+    # Основные команды
+    'ls', 'cd', 'pwd', 'cat', 'echo', 'exit', 'clear', 'history', 'man',    
+    # Управление файлами
+    'cp', 'mv', 'rm', 'mkdir', 'rmdir', 'touch', 'chmod', 'chown', 'ln', 'find', 'grep',    
+    # Системные команды
+    'ps', 'top', 'htop', 'kill', 'pkill', 'df', 'du', 'free', 'uname', 'whoami',    
+    # Сеть
+    'ping', 'ifconfig', 'ip', 'netstat', 'ssh', 'scp', 'wget', 'curl', 'nc', 'dig',    
+    # Пакетные менеджеры
+    'apt', 'yum', 'dnf', 'pacman', 'pip', 'npm',    
+    # Git и разработка
+    'git', 'python', 'python3', 'gcc', 'g++', 'make', 'cmake', 'docker', 'kubectl',    
+    # Текстовые редакторы
+    'nano', 'vim', 'vi', 'emacs', 'sed', 'awk',    
+    # Архивация
+    'tar', 'gzip', 'gunzip', 'zip', 'unzip',    
+    # Разное
+    'date', 'cal', 'bc', 'shutdown', 'reboot', 'alias', 'export', 'source', 'sudo', 'su'
+]
 completer = WordCompleter(commands, ignore_case=True)
 
 # History file
