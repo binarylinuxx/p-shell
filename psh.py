@@ -47,8 +47,9 @@ def get_git_branch():
     except Exception as e:
         preturn f"Unknown error: {e}"
 
-def get_time():
-    return datetime.now().strftime("%I:%M:%p")
+def get_time(format="standart"):
+    if format == "standart":
+        return datetime.now().strftime("%I:%M:%p")
 
 def get_prompt():
     user     = getpass.getuser()
