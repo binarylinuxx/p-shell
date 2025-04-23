@@ -1,0 +1,9 @@
+README.md
+psh.py
+setup.py
+pshell.egg-info/PKG-INFO
+pshell.egg-info/SOURCES.txt
+pshell.egg-info/dependency_links.txt
+pshell.egg-info/entry_points.txt
+pshell.egg-info/requires.txt
+pshell.egg-info/top_level.txt
